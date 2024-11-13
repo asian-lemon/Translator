@@ -6,7 +6,7 @@ import os
 from google.cloud import translate_v2 as translate
 
 # Set environment variables
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/mnt/c/Users/Nikita/Music/translator/translatevn-422707-b030db79fb0b.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'path_to_credentials.json'
 
 def translate_text_google(text, target_language='en'):
     client = translate.Client()
